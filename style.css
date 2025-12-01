@@ -1,0 +1,350 @@
+html,
+body {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0edf9
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+img {
+    width: clamp(20px, 5vw, 40px);
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin: 1rem;
+}
+
+h1, h2 {
+    font-family: "Lexend Deca", sans-serif;
+    margin: 0;
+    padding: 1rem;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: #6D94C5;
+    color: white;
+    box-shadow: 0 0px 10px rgba(0,0,0,0.9);
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover {
+    color: rgb(39, 39, 135)
+}
+
+header div {
+    display: flex;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding-right: 3rem;
+    font-size: 1.2rem;
+}
+
+.atas {
+    text-align: center;
+    padding: 4rem 0 4rem 0;
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+}
+
+.atas h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.atas p {
+    color: rgb(122, 122, 122);
+}
+
+.tengah {
+    display: grid;
+    grid-template-columns: 1.5fr 2.5fr 2fr;
+    border-bottom: 1px solid #ddd;
+}
+
+.tengah h1 {
+    background-color: #6D94C5;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+
+.tengah-isi {
+    border-right: 1px solid #ddd;
+}
+
+.tengah-isi.projects h1 {
+    padding-left: 1rem;
+}
+
+.tengah-isi.projects ul {
+    padding: 0;
+    list-style: none;
+}
+
+.tengah-isi.projects li {
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0 .5rem 1.5rem;
+}
+
+.tengah-isi.projects li:last-child {
+    border-bottom: none;
+}
+
+.experience {
+    padding: 0;
+}
+
+.experience .satu {
+    border-bottom: 1px solid #ddd;
+}
+
+.tengah-isi.experience h1,
+.tengah-isi.experience h2,
+.tengah-isi.experience p,
+.tengah-isi.experience a {
+    padding-left: 1rem;
+}
+
+.tengah-isi.experience a {
+    display: block;
+    padding-bottom: 2rem;
+}
+
+.education {
+    border-right: none;
+    padding: 0;
+}
+
+.tengah-isi.education p {
+    padding: 0 1rem;
+}
+
+.bawah h1 {
+    background-color: #6D94C5;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+
+.wrapper-ulasan {
+    display: flex;
+    margin-top: 2rem;
+}
+.ulasan {
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    margin: 1rem 1.5rem 2rem 1.5rem;
+    padding: 3rem 1.5rem;
+    background-color: rgb(245, 244, 244);
+}
+
+.ulasan p {
+    margin: 0;
+    color: rgb(114, 114, 114);
+}
+
+.ulasan h4 {
+    margin: .4rem 0 1rem 0;
+}
+
+.cookies {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.933);
+    border: 1px solid #ddd;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%;
+    padding: 2rem;
+    border-radius: 10px;
+    gap: 1rem;
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.accept-btn {
+    font-family: "Nunito", sans-serif;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #809dc0;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    width: 300px;
+}
+
+.accept-btn:hover {
+    background-color: #6D94C5;
+}
+
+.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.komentar {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.komentar h2 {
+    font-weight: normal;
+    font-size: large;
+}
+
+.komentar textarea {
+    resize: none;
+    width: 100%;
+    max-width: 600px;
+    height: 150px;
+    font-size: 1rem;
+    padding: .5rem;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-family: "Nunito", sans-serif;
+}
+
+.komentar p {
+    position: absolute;
+    bottom: 10px;
+    right: 450px;
+    margin: 0;
+    color: rgb(114, 114, 114);
+    font-size: 0.9rem;
+    text-align: right;
+}
+
+.limit-hit {
+    color: red;
+}
+
+.limit-hit:focus {
+    outline: none;
+    border: 2px solid red;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 640px) {
+    h1 {
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 0;
+        background-color: transparent;
+        color: black;
+        font-size: 1.2rem;
+    }
+
+    header div {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    header p {
+        margin: 0.3rem 0 1rem 0;
+    }
+
+    img {
+        margin-bottom: 0;
+        width: 10%;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: .5rem 0;
+        background-color: #6D94C5;
+        gap: 1rem;
+    }
+
+    nav a {
+        text-decoration: none;
+    }
+
+    .atas {
+        padding: 3rem;
+        margin: 0;
+    }
+
+    .atas h1 {
+        padding: 0 .5rem;
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    .atas p {
+        color: rgb(122, 122, 122);
+        padding: 0 .5rem;
+        font-size: .8rem;
+    }
+
+    .tengah {
+        grid-template-columns: 1fr;
+    }
+
+    .tengah-isi.projects ul {
+        margin: 0;
+    }
+    
+    .bawah {
+        padding: 0;
+    }
+
+    .wrapper-ulasan  {
+        flex-direction: column;
+    }
+
+    .ulasan {
+        margin: 2rem 1.5rem .5rem 1.5rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .komentar p {
+        right: 20px;
+    }
+
+    footer {
+        font-size: .8rem;
+    }
+
+}
